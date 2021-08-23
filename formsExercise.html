@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,20 @@
     <meta name="description" content="Forms Exercise">
     <title>Survey</title>
 </head>
+
 <body>
     <form>
-    <fieldset>
-        <legend>Customer Experience Survey</legend>
-        <div>
-            <label for="storeNumber">Store Number</label>
-            <select name="storeNumber" id="storeNumber">
-                <option hidden value="selectAStore">Select A Store</option>
-                <option value="3109">3109</option>
-                <option value="2421">2421</option>
-                <option value="5357">5357</option>
-            </select>
-        </div>
+        <fieldset>
+            <legend>Customer Experience Survey</legend>
+            <div>
+                <label for="storeNumber">Store Number</label>
+                <select name="storeNumber" id="storeNumber">
+                    <option hidden>Select A Store</option>
+                    <option value="3109">3109</option>
+                    <option value="2421">2421</option>
+                    <option value="5357">5357</option>
+                </select>
+            </div>
             <fieldset>
                 <legend>When you visited:</legend>
                 <div>
@@ -37,36 +39,38 @@
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" placeholder="Email">
             </div>
-            <fieldset>
-                <legend>Gender</legend>
-                <div>
-                    <input type="radio" name="gender" id="male">
+            <div>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" name="gender" id="male" value="male">
                     <label for="male">Male</label>
-                </div>
-                <div>
-                    <input type="radio" name="gender" id="female" checked>
+                    <br>
+                    <input type="radio" name="gender" id="female" value="female" checked>
                     <label for="female">Female</label>
-                </div>
-            <div>
-                </fieldset>
-                <label for="experience">Tell us about your experience:</label>
-                <br>
-                <textarea name="experience" id="experience" cols="20" rows="2"></textarea>
             </div>
             <div>
-                <label for="timesVisited">Times visited in the last month:</label>
-                <br>
-                <input type="number" name="timesVisited" id="timesVisited" min="1" max="30">
-                <br>
-                <input type="checkbox" name="willingToBeContacted" id="willingToBeContacted" required>
-                <label for="willingToBeContacted">Please check the box if you would be willing to be contacted about your experience</label>
-                <br>
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" pattern=".{5,10}" title="Please enter a password that is 5 to 10 characters in length"/>  
-            </div>
-            <input type="reset" value="Reset">
-            <input type="submit">
-    </fieldset>
-</form>
+        </fieldset>
+        <label for="experience">Tell us about your experience:</label>
+        <br>
+        <textarea name="experience" id="experience" cols="20" rows="2"></textarea>
+        </div>
+        <div>
+            <label for="timesVisited">Times visited in the last month:</label>
+            <br>
+            <input type="number" name="timesVisited" id="timesVisited" min="1" max="30">
+            <br>
+            <input type="checkbox" name="willingToBeContacted" id="willingToBeContacted" required>
+            <label for="willingToBeContacted">Please check the box if you would be willing to be contacted about your
+                experience</label>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" pattern=".{5,10}"
+                title="Please enter a password that is 5 to 10 characters in length" />
+        </div>
+        <input type="reset" value="Reset">
+        <input type="submit">
+        </fieldset>
+    </form>
 </body>
+
 </html>
